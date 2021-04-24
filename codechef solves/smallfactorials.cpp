@@ -1,16 +1,16 @@
-#include<iostream>
-using namespace std;
-
+#include<stdio.h>
+#include<cmath>
 int main(){
-      int t,n;
-      cin>>t;
-      int  fact = 1;
-      for(int i=1;i<=t;i++){
-              cin>>n;
-              while(n!=0){
-                fact = fact * n ;
-              }
-              cout<<fact<<endl;
+      int t,n,result=1;
+      scanf("%d",&t);
+
+      while(t--){
+          scanf("%d",&n);
+          for(int i=1;i<=n;i++){
+            result = result*i;
+          }
+        printf("%d\n",result);
+        result = 1;
       }
 
 }
